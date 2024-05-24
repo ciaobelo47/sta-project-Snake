@@ -23,7 +23,6 @@ function playGame() {
                 snake.move(false)
                 snake.paint()
                 led.plot(food[0], food[1])
-                console.log(food)
             }
         }
         basic.pause(500)
@@ -150,6 +149,7 @@ function gameOver() {
  */
 function rndFoodPos() {
     food = [randint(0, 4), randint(0, 4)]
+    
     // controllo che il cibo non si generi sopra ai pixel del serpente
     snake.lista.forEach(point => {
         if (food[0] == point[0] && food[1] == point[1]) {
