@@ -18,6 +18,8 @@ function playGame() {
             if (snake.lista[0][0] == food[0] && snake.lista[0][1] == food[1]) {
                 snake.move(true)
                 snake.paint()
+                score++
+                music.tonePlayable(Note.C, music.beat(BeatFraction.Whole))
                 led.plot(food[0], food[1])
             } else {
                 snake.move(false)
@@ -142,6 +144,9 @@ function gameOver() {
     basic.clearScreen()
     playing = false
     basic.showString("Game Over")
+    basic.showString("Score: ")
+    basic.showNumber(score)
+    basic.pause(200)
 }
 
 /**

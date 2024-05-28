@@ -10,7 +10,8 @@
         "main.ts",
         "README.md",
         "direzione.ts",
-        "snake.ts"
+        "snake.ts",
+        "_locales/it-IT/README.md"
     ],
     "testFiles": [
         "test.ts"

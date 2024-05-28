@@ -9,6 +9,8 @@ class Snake {
 
     /**
      * Metodo che muove il serpente
+     * 
+     * @param eaten valore per capire se il serpente ha mangiato
      */
     move(eaten: Boolean) {
         let tmpLista: Array<Array<number>> = []
