@@ -1,24 +1,9 @@
+## Snake: a Micro:Bit Project
 
-> Apri questa pagina in [https://ciaobelo47.github.io/sta-project-snake/](https://ciaobelo47.github.io/sta-project-snake/)
-
-## Usa come Estensione
-
-Questa repository può essere aggiunta come una **estensione** in MakeCode.
-
-* apri [https://makecode.microbit.org/](https://makecode.microbit.org/)
-* clicca su **Nuovo Progetto**
-* fai clic su **Estensioni** nel menu della ruota dentata
-* cerca **https://github.com/ciaobelo47/sta-project-snake** ed importa
-
-## Modifica questo progetto
-
-Per modificare questa repository in MakeCode.
-
-* apri [https://makecode.microbit.org/](https://makecode.microbit.org/)
-* clicca su **Importa** quindi fai clic su **Importa INDIRIZZO**
-* incolla **https://github.com/ciaobelo47/sta-project-snake** e clicca importa
-
-#### Metadati (usati per la ricerca, il rendering)
-
-* for PXT/microbit
-<script src="https://makecode.com/gh-pages-embed.js"></script><script>makeCodeRender("{{ site.makecode.home_url }}", "{{ site.github.owner_name }}/{{ site.github.repository_name }}");</script>
+Il progetto da me creato è una riproduzione del famoso gioco "Snake" su Micro:Bit:
+tramite i due pulsanti integrati nella scheda è possibile muovere il serpente allo
+scopo di fargli mangiare il cibo per poi farlo crescere finché si riesce. Il serpente può
+spostarsi in quattro direzioni: su, giù, destra e sinistra che sono calcolate
+relativamente al campo di gioco, cioè la scheda Micro:Bit. Sono quindi presenti due
+elementi: il serpente, che è una matrice di led (con la sua lunghezza) e la mela che
+appare in punti casuali.
