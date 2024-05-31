@@ -10,6 +10,7 @@ let loading = false
 function playGame() {
     playing = true
     rndFoodPos()
+
     while (playing) {
         // se il serpente tocca il muro, muore; altrimenti controllo se mangia
         if (snake.x() > 4 || snake.y() > 4 || snake.x() < 0 || snake.y() < 0) {
@@ -19,7 +20,7 @@ function playGame() {
                 snake.move(true)
                 snake.paint()
                 score++
-                music.tonePlayable(Note.C, music.beat(BeatFraction.Whole))
+                music.play(music.tonePlayable(Note.C, 100), music.PlaybackMode.InBackground)
                 led.plot(food[0], food[1])
             } else {
                 snake.move(false)
@@ -142,6 +143,7 @@ function loadingGame() {
 
 function gameOver() {
     basic.clearScreen()
+    music.play(music.builtInPlayableMelody(Melodies.Wawawawaa), music.PlaybackMode.InBackground)
     playing = false
     basic.showString("Game Over")
     basic.showString("Score: ")
